@@ -59,9 +59,11 @@ public class BaseClass {
 	public void tearDownMethod(ITestResult result) throws IOException {
 		Reporter.log("Test is about to end", true);
 		
+		
 		if(result.getStatus()==ITestResult.FAILURE) {
 			// For capturing ss on failure using ITestresult interface
 			//Helper.captureScreenshot(driver);
+			
 			
 			// For attaching ss in extent reports on failure	
 			logger.fail("Test Failed", MediaEntityBuilder.createScreenCaptureFromPath(Helper.captureScreenshot(driver)).build());
