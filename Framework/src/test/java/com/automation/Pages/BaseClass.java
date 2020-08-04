@@ -74,5 +74,7 @@ public class BaseClass {
 		report.flush();
 		
 		Reporter.log("Test Completed >> reports generated", true);
+		
+		//This is to demo git push
 	}
 }
