@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Setting up reports and application getting ready]]>
+    </line>
+    <line>
+      <![CDATA[Setting done - Test can be started]]>
+    </line>
+    <line>
+      <![CDATA[Trying to start browser and Getting application ready]]>
+    </line>
+    <line>
+      <![CDATA[Browser and application is up and running]]>
+    </line>
+    <line>
+      <![CDATA[Test is about to end]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2020-08-06T08:14:05Z" name="Default suite" finished-at="2020-08-06T08:14:17Z" duration-ms="12062">
+    <groups>
+    </groups>
+    <test started-at="2020-08-06T08:14:05Z" name="Default test" finished-at="2020-08-06T08:14:17Z" duration-ms="12062">
+      <class name="com.automation.TestCases.LoginTestCRM">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.automation.TestCases.LoginTestCRM@305b7c14]" started-at="2020-08-06T08:14:05Z" name="setUpSuite" finished-at="2020-08-06T08:14:05Z" duration-ms="340" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Setting up reports and application getting ready]]>
+            </line>
+            <line>
+              <![CDATA[Setting done - Test can be started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.TestCases.LoginTestCRM@305b7c14]" started-at="2020-08-06T08:14:05Z" name="setUp" finished-at="2020-08-06T08:14:17Z" duration-ms="11936" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Trying to start browser and Getting application ready]]>
+            </line>
+            <line>
+              <![CDATA[Browser and application is up and running]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginApp()[pri:0, instance:com.automation.TestCases.LoginTestCRM@305b7c14]" started-at="2020-08-06T08:14:17Z" name="loginApp" finished-at="2020-08-06T08:14:17Z" duration-ms="76" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.automation.Utility.ExcelDataProvider.getStringData(ExcelDataProvider.java:29)
+at com.automation.TestCases.LoginTestCRM.loginApp(LoginTestCRM.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApp -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.TestCases.LoginTestCRM@305b7c14]" started-at="2020-08-06T08:14:17Z" name="tearDownMethod" finished-at="2020-08-06T08:14:17Z" duration-ms="4" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginApp status=FAILURE method=LoginTestCRM.loginApp()[pri:0, instance:com.automation.TestCases.LoginTestCRM@305b7c14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.automation.Utility.Helper.captureScreenshot(Helper.java:20)
+at com.automation.Pages.BaseClass.tearDownMethod(BaseClass.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test is about to end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.TestCases.LoginTestCRM@305b7c14]" started-at="2020-08-06T08:14:17Z" name="tearDown" finished-at="2020-08-06T08:14:17Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automation.TestCases.LoginTestCRM -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

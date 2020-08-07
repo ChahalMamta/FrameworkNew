@@ -10,6 +10,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.automation.Utility.BrowserFactory;
 import com.automation.Utility.ConfigDataProvider;
@@ -41,11 +42,21 @@ public class BaseClass {
 	  
 	  Reporter.log("Setting done - Test can be started", true);
 	}
-	@BeforeClass
+	
+    
+	//@Parameters("browser", "appURL")
+	 @BeforeClass
+	//while taking parameters from maven - coming from SystemPropertyVariables in pom.xml
+	//public void setUp(String browser, String appURL) {
+	 
 	public void setUp() {
 		Reporter.log("Trying to start browser and Getting application ready", true);
 		
+		//To read variables from config file
 		BrowserFactory.startApplication(driver, config.getBrowser(), config.getStagingUrl());
+		
+		//To take variables from pom.xml/ at run time in cmd for maven
+		//BrowserFactory.startApplication(driver, browser, appURL);
 		
 		Reporter.log("Browser and application is up and running", true);
 	}
